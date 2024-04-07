@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#navbar {
+
+    display: flex;
+    align-items: center;
+    top: 0px;
+    /* /* height: 80px; */
+    background-color: black;
+    opacity: 0.5; 
+    /* position: sticky; */
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+    border: 2px solid white;
+
+
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    font: 1rem sans-serif;
+}
+
+ul li a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 3px 22px;
+    color: white;
+
+}
+
+ul li a:hover {
+    color: cyan;
+}
+
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 222px;
+    
+}
+
+#home h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    padding: 30px;
+
+}
+
+#home p {
+    color: blanchedalmond;
+    padding: 3px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(italian-cuisine-2378729_1920.jpg) no-repeat center center/cover;
+    background-position: bottom;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    padding: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home .btn {
+    margin: 45px;
+    padding: 10px 15px;
+    border: 4px solid white;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+
+
+}
+
+#home .btn:hover {
+    background-color: sandybrown;
+
+}
+
+#Blogs{
+    background-color: rgb(245, 230, 228);
+    padding-top: 0%;
+}
+
+#blogers{
+    display: flex;
+    margin: 35px;
+    padding: 50px;
+    padding-left: 60px;
+}
+
+
+
+#blogers h1{
+    color: black;
+    font-size: 3rem;
+    padding: 30px;
+    text-align: center;
+    margin: 44px;
+
+}
+
+#blogers .box {
+    /* border: 2px solid red; */
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 2px 5px;
+    margin-top: 20px;
+   
+}
+
+#blogers .box img{
+    height: 300px;
+    width: 290px;
+}
+
+#blogers .box img:hover{
+    transform: scale(1.1);
+}
+
+#blogers .popup{
+    /* Popup container */
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+}
+
+/* Popup content */
+.popupContent {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
+}
+
+/* Close button */
+.closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.middle{
+    font-size: 25px;
+    text-align: center;
+    font-family: cursive;
+}
+
+
+#services {
+    display: flex;
+    margin: 35px;
+    padding: 50px;
+
+
+}
+
+#services h1 {
+    color: black;
+    font-size: 3rem;
+    padding: 30px;
+    text-align: center;
+    margin: 44px;
+
+
+}
+
+
+#services .box {
+    border: 2px solid red;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 34px;
+    margin: 2px 55px;
+    margin-top: 20px;
+}
+
+
+#services .box img {
+    height: 50px;
+    margin: auto;
+    display: block;
+}
+
+#map{
+    background-color: antiquewhite;
+}
+
+
+#foodmap .box img{
+    align-items: center;
+    padding-left: 425px;
+}
+
+
+
+#client-section {
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(logo-1340517_1280.png);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(logo-1340517_1280.png) no-repeat center center\cover;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: whitesmoke;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+.primarymiddle{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    
+
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.center {
+    align-items: center;
+}
